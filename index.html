@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Library</h1>
+        <input type="search" placeholder="Search for a book...">
+        <button id="Add_Btn">Add Book</button>
+    </header>
+    <main class="main">
+        <div id="bookCardsContainer" class="cards-container"></div>
+    </main>
+    <footer class="footer">
+        <p>Created by BotCarlos</p>
+    </footer>
+
+    <div id="addBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a new book</h2>
+            <form id="addBookForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required><br>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required><br>
+                <label>
+                    <input type="radio" name="read_status" value="read" required> Read
+                </label>
+                <label>
+                    <input type="radio" name="read_status" value="not_read" required> Not Read
+                </label><br>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

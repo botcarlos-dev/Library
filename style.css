@@ -1,0 +1,160 @@
+body {
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f1ea;
+}
+
+.header {
+    border: 2px solid #8b4513;
+    background-color: #6b4423;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Garamond', serif;
+}
+
+.header input, .header button {
+    justify-self: end;
+    border: 1px solid #8b4513;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff5ee;
+}
+
+.header button {
+    background-color: #8b4513;
+    color: white;
+}
+
+.header button:hover {
+    background-color: #5a3015;
+}
+
+.main {
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards {
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff8dc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.cards h1, .cards h2, .cards h3 {
+    margin: 0 0 10px 0;
+    color: #8b4513;
+    font-family: 'Garamond', serif;
+}
+
+#remove_book {
+    padding: 10px 15px;
+    background-color: #a52a2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#remove_book:hover {
+    background-color: #8b0000;
+}
+
+.footer {
+    border: 1px solid #8b4513;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff5ee;
+    color: #8b4513;
+    font-family: 'Garamond', serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff5ee;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #8b4513;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addBookForm label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #8b4513;
+}
+
+#addBookForm input[type="text"],
+#addBookForm input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #8b4513;
+    border-radius: 5px;
+    background-color: #fff8dc;
+}
+
+#addBookForm input[type="radio"] {
+    margin-right: 5px;
+}
+
+#addBookForm button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6b4423;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addBookForm button:hover {
+    background-color: #5a3015;
+}
